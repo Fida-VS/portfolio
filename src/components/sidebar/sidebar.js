@@ -7,21 +7,41 @@ export const Sidebar = () => {
         <div className={styles.sidebar}>
 
             <div className={styles.profile}>
-                <img src='https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f600/u1f600_u1f920.png' alt='avatar' />
+                <img src='https://sun9-18.userapi.com/impf/UiB86PsAQMNuiqGiVPSnG8yHjNl-YvQHSk4KDw/2qKfOtgAnMk.jpg?size=682x1024&quality=96&sign=52880c93de9bf1b4d52dc5b1ac3f72e8&type=album' alt='avatar' />
 
                 <div className={styles.profile__header}>
-                    <div>Судницына Вера</div>
-                    <div>Front-end разработчик</div>
+                    <h3>Судницына Вера</h3>
+                    <h4>Front-end разработчик</h4>
                 </div>
 
                 <div className={styles.social}>
-                    
+                    <div className={styles.social__item}></div>
+                    <div className={styles.social__item}></div>
+                    <div className={styles.social__item}></div>
+                    <div className={styles.social__item}></div>
                 </div>
 
-                <div className={styles.profile__text}></div>
+                <div className={styles.profile__text}>Какой-то текст</div>
 
                 <div className={styles.profile__skills}>
-                    
+                    <h3>Зырь чо умею</h3>
+                    <div className={styles.profile__skills__box}>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}></div>
+                    </div>
                 </div>
 
                 </div> 
