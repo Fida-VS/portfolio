@@ -1,0 +1,18 @@
+.content {
+    margin-left: 300px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.item {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f0dc29;
+border: 1px solid black;
+}
+

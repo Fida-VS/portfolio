@@ -8,8 +8,8 @@ export const Main = () => {
 
     return (
         <div className={styles.main}>
-            <Sidebar/>
-            <Content/>
+            <Sidebar />
+            <Content />
         </div>
     );
 }
