@@ -5,14 +5,24 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 50px;
 }
 
-.item {
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #f0dc29;
-border: 1px solid black;
-}
+.projects .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0dc29;
+    border: 1px solid black;
+    }
 
+.projects .item img {
+        display: block;
+        }
+
+.slider_box {
+cursor: pointer;
+        }
