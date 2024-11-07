@@ -9,6 +9,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin: 10px;
 }
 
 .allPagesContainer {
@@ -22,4 +23,6 @@
 
 .arrow {
     cursor: pointer;
+    font-size: 2rem;
+    background-color: none;
 }

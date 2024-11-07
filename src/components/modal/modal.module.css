@@ -34,8 +34,6 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: #f0dc29;
-    border: 1px solid black;
     z-index: 3000;
     }
 
@@ -48,4 +46,6 @@
     top: 3%;
     left: 81%;
     cursor: pointer;
+    font-size: 2rem;
+    color: rgb(236, 229, 229, 0.8);
 }   

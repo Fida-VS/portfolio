@@ -19,7 +19,7 @@ export const Modal = () => {
   return (
     <div className={styles.modal}>
       <div className={styles.box}>
-        <div className={styles.title}>Title</div>
+        <div className={styles.title}>{images[0][2]}</div>
         <InfiniteSlider infinite>
 		     
        {
@@ -33,9 +33,9 @@ export const Modal = () => {
        }
 
 		</InfiniteSlider>
-    <div className={styles.description}>Тестовое задание - небольшое SPA-приложение, взаимодействующее с сервером. Реализованы страницы: авторизация и страница с таблицей, данные для которой получены с сервера. Можно взаимодействовать с таблицей - добавлять/редактировать/удалять записи. Изменения сразу отображаются в таблице. Данные для авторизации: логин - userN, где вместо N нужно ввести число, например user1, user2… user33. Пароль - password – одинаков для всех логинов.</div>
+    <div className={styles.description}>{images[0][3]}</div>
       </div>
-      <button type="button" className={styles.delete_button} onClick={() => dispatch(setIsOpenFalse())}>✖</button>
+      <div className={styles.delete_button} onClick={() => dispatch(setIsOpenFalse())}>✖</div>
     </div>
   );
 };

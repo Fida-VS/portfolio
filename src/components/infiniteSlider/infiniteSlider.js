@@ -124,8 +124,8 @@ export const InfiniteSlider = ({children, infinite}) => {
     return(
         <SliderContext.Provider value={{ width }}>
         <div className={styles.slider}>
-            <button className={styles.arrow} onClick={handleArrowLeftClick}>&#8249;</button>
-            <div className={styles.window} onMouseOver={handleScrollLastSlide} onMouseLeave={handleScrollBack} >
+            <div className={styles.arrow} onClick={handleArrowLeftClick}>❮</div>
+            <div className={styles.window} onMouseOver={handleScrollLastSlide} onMouseLeave={handleScrollBack} onClick={() => dispatch(setIsOpenTrue())}>
                 <div className={styles.allPagesContainer}
                 style={{
                     transitionDuration: `${transitionDuration}ms`,
@@ -133,7 +133,7 @@ export const InfiniteSlider = ({children, infinite}) => {
                 }}
                 >{pages}</div>
             </div>
-            <button className={styles.arrow} onClick={handleArrowRightClick}>&#8250;</button>
+            <div className={styles.arrow} onClick={handleArrowRightClick}>❯</div>
         </div>
         </SliderContext.Provider>
     );
