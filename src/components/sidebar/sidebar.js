@@ -1,4 +1,6 @@
+import { ICONS } from '../../constants';
 import styles from './sidebar.module.css';
+
 
 export const Sidebar = () => {
 
@@ -24,23 +26,48 @@ export const Sidebar = () => {
                 <div className={styles.profile__text}>Какой-то текст</div>
 
                 <div className={styles.profile__skills}>
-                    <h3>Зырь чо умею</h3>
+                    <h3>Стек технологий</h3>
                     <div className={styles.profile__skills__box}>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
-                        <div className={styles.profile__skills__item}></div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.JAVA_SCRIPT} alt="js" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.TYPE_SCRIPT} alt="ts" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.REACT} alt="react" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.REDUX} alt="redux" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.GIT} alt="git" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.NODE_JS} alt="nodejs" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.DOCKER} alt="docker" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.EXPRESS} alt="express" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.MONGO_DB} alt="mongodb" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.WEBPACK} alt="webpack" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.HTML} alt="html" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.CSS} alt="css" />
+                        </div>
+                        <div className={styles.profile__skills__item}>
+                        <img src={ICONS.MUI} alt="mui" />
+                        </div>
+                        
                     </div>
                 </div>
 

@@ -32,6 +32,7 @@ export const SLIDER_REPOS_IMAGES = [
     [start, 'start', 'Поиск репозиториев', 'Приложение для поиска репозиториев GitHub с помощью GitHub REST API. Результаты поиска представлены в виде таблицы со следующими столбцами: название, язык, число форков, число звёзд, дата обновления. По выбору строки должны отображаться детали: язык, число звёзд, описание, лицензия. Реализованы пагинация и сортировка с возможностью выбора направления по следующим столбцам: число звёзд, число форков, дата обновления.'],
     [main, 'main'],
     [aside, 'aside'],
+    
 ];
 
 export const SLIDER_MAZE_IMAGES = [
@@ -43,6 +44,7 @@ export const SLIDER_MAZE_IMAGES = [
     [formForReview, 'form-for-review'],
     [privatePage, 'private-page'],
     [changeUserRole, 'change-user-role'],
+    
 ];
 
 export const SLIDER_TODO_IMAGES = [
@@ -51,4 +53,5 @@ export const SLIDER_TODO_IMAGES = [
     [controlPanel, 'control-panel'],
     [activeTodos, 'active-todos'],
     [completedTodos, 'completed-todos'],
+    
 ];
