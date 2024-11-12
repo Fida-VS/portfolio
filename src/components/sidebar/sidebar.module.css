@@ -12,7 +12,7 @@
 .profile {
     margin: 0 auto;
     width: 80%;
-    margin-top: 8rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,12 +26,12 @@
     margin-bottom: 10px;
 }
 
-/* .profile__header h3, .profile__header h4 {
-    margin-bottom: 5px;
-    font-size: 1.2rem;
-} */
-
 .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,11 +40,23 @@
 }
 
 .social__item {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(247, 132, 111);
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     margin-left: 8px;
+}
+
+.social__item a img {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.social_text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .profile__skills {

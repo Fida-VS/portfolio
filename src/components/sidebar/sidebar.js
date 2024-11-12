@@ -1,4 +1,4 @@
-import { ICONS } from '../../constants';
+import { ICONS, ICONS_SOCIAL } from '../../constants';
 import styles from './sidebar.module.css';
 
 
@@ -17,10 +17,35 @@ export const Sidebar = () => {
                 </div>
 
                 <div className={styles.social}>
-                    <div className={styles.social__item}></div>
-                    <div className={styles.social__item}></div>
-                    <div className={styles.social__item}></div>
-                    <div className={styles.social__item}></div>
+
+                <div className={styles.social_links}>
+                    <div className={styles.social__item}>
+                    <a href="https://balashiha.hh.ru/resume/23509aa3ff081fe8d60039ed1f4b4a71565048">
+                           <img src={ICONS_SOCIAL.HEAD_HUNTER} alt='headHunter'/>
+                                 </a>
+                    </div>
+                    <div className={styles.social__item}>
+                    <a href="https://github.com/Fida-VS">
+                                 <img src={ICONS_SOCIAL.GIT_HUB} alt='gitHub' />
+                    </a>
+                    </div>
+                    <div className={styles.social__item}>
+                    <a href="https://htmlacademy.ru">
+                                       <img src={ICONS_SOCIAL.TELEGRAM} alt='telegram' />
+                           </a>
+                    </div>
+                    <div className={styles.social__item}>
+                    <a href="https://vk.com/id46562054">
+                                <img src={ICONS_SOCIAL.VKONTAKTE} alt='vkontakte' />
+                           </a>
+                    </div>
+                    </div>
+
+                    <div className={styles.social_text}>
+                        <div>Телефон: + 7 905 605 21 73</div>
+                        <div>Email: poletaeva69vera@mail.ru</div>
+                    </div>
+
                 </div>
 
                 <div className={styles.profile__text}>Какой-то текст</div>

@@ -11,6 +11,10 @@ import webpack from './../../img/icons/icons8-webpack-48.png';
 import html from './../../img/icons/icons8-html-48.png';
 import css from './../../img/icons/icons8-css3-48.png';
 import mui from './../../img/icons/icons8-material-ui-48.png';
+import vk from './../../img/icons/icons8-vkontakte-48.png';
+import hh from './../../img/icons/600px-HeadHunter_logo.png';
+import github from './../../img/icons/icons8-github-48.png';
+import telegram from './../../img/icons/telegramm.png';
 
 
 
@@ -30,4 +34,11 @@ export const ICONS = {
     HTML: html,
     CSS: css,
     MUI: mui,
+}
+
+export const ICONS_SOCIAL = {
+   VKONTAKTE: vk,
+   HEAD_HUNTER: hh,
+   GIT_HUB: github,
+   TELEGRAM: telegram,
 }
