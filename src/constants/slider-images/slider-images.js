@@ -48,7 +48,7 @@ export const SLIDER_MAZE_IMAGES = [
 ];
 
 export const SLIDER_TODO_IMAGES = [
-    [mainTodo, 'main-todo', 'Список дел', 'Приложение Список дел', 'https://fida-vs.github.io/minboxTodo/', 'https://github.com/Fida-VS/minboxTodo'],
+    [mainTodo, 'main-todo', 'Список дел', 'Приложение "Список дел" - удобный инструмент для управления задачами. С его помощью вы можете создавать список дел, отмечать выполненные задачи и отслеживать прогресс выполнения. Основные функции: Добавление задач - вы можете добавить новую задачу в свой список дел всего за пару кликов.Удаление задач: Завершили дело? Просто удалите его из списка! Фильтрация задач: Приложение позволяет вам выбирать, какие задачи отображаются: только завершенные, незавершенные или все сразу. Для хранения данных используется JSONPlaceholder.', 'https://fida-vs.github.io/minboxTodo/', 'https://github.com/Fida-VS/minboxTodo'],
     [miniControlPanel, 'mini_control-panel'],
     [controlPanel, 'control-panel'],
     [activeTodos, 'active-todos'],
