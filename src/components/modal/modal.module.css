@@ -49,3 +49,9 @@
     font-size: 2rem;
     color: rgb(236, 229, 229, 0.8);
 }   
+
+.buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -153,6 +153,34 @@ export const Content = () => {
           </div>
           <Modal />
         </div>
+
+        <Technologies>
+        <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>TypeScript</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>React</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>Redux Toolkit</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>HTML</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>CSS</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>MUI</div>
+          </div>
+        </Technologies> 
+
         </div>
 
                                                                  {/* TODO PROJECT */}
@@ -175,6 +203,34 @@ export const Content = () => {
           </div>
           <Modal />
         </div>
+
+        <Technologies>
+        <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>TypeScript</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>React</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>Redux Toolkit</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>HTML</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>CSS</div>
+          </div>
+          <div className={styles.technology_box}>
+            <div className={`${styles.circle} ${styles.red}`}></div>
+            <div className={styles.technology}>MUI</div>
+          </div>
+        </Technologies>
+
         </div>
       </div>
     </div>

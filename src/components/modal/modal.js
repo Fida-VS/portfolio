@@ -33,6 +33,10 @@ export const Modal = () => {
        }
 
 		</InfiniteSlider>
+    <div className={styles.buttons}>
+      <div><a href={images[0][4]}>Демо версия</a></div>
+      <div><a href={images[0][5]}>Репозиторий на GitHub</a></div>
+    </div>
     <div className={styles.description}>{images[0][3]}</div>
       </div>
       <div className={styles.delete_button} onClick={() => dispatch(setIsOpenFalse())}>✖</div>
