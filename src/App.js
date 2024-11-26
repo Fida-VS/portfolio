@@ -5,7 +5,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="*" element={<div>Страница с ошибкой</div>} />
+      <Route path="*" element={<div>Такой страницы не существует</div>} />
     </Routes>
   );
 }
