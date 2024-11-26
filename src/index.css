@@ -22,6 +22,8 @@
  body,
  :where(blockquote, figure):where([class]) {
    margin: 0;
+   background-color: #272822;
+   color: #f8f8e5;
  }
  
  /**

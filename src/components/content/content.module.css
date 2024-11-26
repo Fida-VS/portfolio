@@ -1,5 +1,9 @@
 .content {
   margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -15,7 +19,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
-  margin-left: 50px;
 }
 
 .projects .item {
@@ -30,21 +33,33 @@
   display: block;
 }
 
+.project {
+  background-color: #34352f;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+.project .title {
+  font-size: 1.4rem;
+  margin: 3px;
+  /* color: #e2c08d; */
+}
+
 .slider_box {
   cursor: pointer;
 }
 
 .technology_box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 7px 10px;
 }
 
 .technology {
   margin-right: 4px;
 }
-
 
 .circle {
   width: 10px;
@@ -53,10 +68,42 @@
   margin-right: 4px;
 }
 
-.red {
-  background-color: red;
+.js {
+  background-color: #ffd600;
 }
 
-.blue {
-  background-color: blue;
+.ts {
+  background-color: #1976d2;
+}
+
+.react {
+  background-color: #80deea;
+}
+
+.html {
+  background-color: #ff6d00;
+}
+
+.css {
+  background-color: #0277bd;
+}
+
+.redux {
+  background-color: #7e57c2;
+}
+
+.mui {
+  background-color: #039be5;
+}
+
+.node {
+  background-color: #6da75d;
+}
+
+.mongo {
+  background-color: #599636;
+}
+
+.docker {
+  background-color: #2395ec;
 }

@@ -1,6 +1,10 @@
 .technologies {
+    max-width: 400px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
