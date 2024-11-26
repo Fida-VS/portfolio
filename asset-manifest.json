@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e6044dca.css",
+    "main.js": "/portfolio/static/js/main.3af550f4.js",
+    "static/js/453.a6a97343.chunk.js": "/portfolio/static/js/453.a6a97343.chunk.js",
+    "static/media/avatar2.jpg": "/portfolio/static/media/avatar2.028a5f4535d938322369.jpg",
+    "static/media/active-todo.png": "/portfolio/static/media/active-todo.b612a5b347baf5ced4da.png",
+    "static/media/control-panel.png": "/portfolio/static/media/control-panel.5bd30546d782a4f17f30.png",
+    "static/media/reviews_for_user.png": "/portfolio/static/media/reviews_for_user.163b49978fd875d7b3ac.png",
+    "static/media/reviews.png": "/portfolio/static/media/reviews.fe245e176d3bbc4a0dea.png",
+    "static/media/mini_control-panel.png": "/portfolio/static/media/mini_control-panel.e2b8a736807fe63868d1.png",
+    "static/media/change_user-role.png": "/portfolio/static/media/change_user-role.f67a24a0fef6fcaa29aa.png",
+    "static/media/users.png": "/portfolio/static/media/users.a7f037c11b3be9285089.png",
+    "static/media/main-todo.png": "/portfolio/static/media/main-todo.01094213419b09238f46.png",
+    "static/media/table-info2.png": "/portfolio/static/media/table-info2.2d0830b5079d9bdce53c.png",
+    "static/media/repainfo2.png": "/portfolio/static/media/repainfo2.27454b1b76b005ab00c2.png",
+    "static/media/form_for_review.png": "/portfolio/static/media/form_for_review.0bae9c896d89668f5142.png",
+    "static/media/spisokdelinfo2.png": "/portfolio/static/media/spisokdelinfo2.53216d50f8d3f92c2442.png",
+    "static/media/aside.png": "/portfolio/static/media/aside.8b7794f5b5c44a42c0f9.png",
+    "static/media/update.png": "/portfolio/static/media/update.a01fc5425ed1229d76e8.png",
+    "static/media/completed-todo.png": "/portfolio/static/media/completed-todo.4deeec28fb93d9da3d78.png",
+    "static/media/main.png": "/portfolio/static/media/main.7d9d896f8bc3346b2d70.png",
+    "static/media/mazeinfo2.png": "/portfolio/static/media/mazeinfo2.2b8d6b15f164550894fa.png",
+    "static/media/form.png": "/portfolio/static/media/form.05bb0b2f2897c87e1d3b.png",
+    "static/media/main-screen.png": "/portfolio/static/media/main-screen.f909a294bfba269a7149.png",
+    "static/media/maze.png": "/portfolio/static/media/maze.c82f8d5ac41e7dc38119.png",
+    "static/media/entrance.png": "/portfolio/static/media/entrance.248e45fe44203c8d16bb.png",
+    "static/media/start.png": "/portfolio/static/media/start.b82d4e35aa2ea9b10d3d.png",
+    "static/media/authorization.png": "/portfolio/static/media/authorization.c35a8beb649ce5402930.png",
+    "index.html": "/portfolio/index.html",
+    "main.e6044dca.css.map": "/portfolio/static/css/main.e6044dca.css.map",
+    "main.3af550f4.js.map": "/portfolio/static/js/main.3af550f4.js.map",
+    "453.a6a97343.chunk.js.map": "/portfolio/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6044dca.css",
+    "static/js/main.3af550f4.js"
+  ]
+}
