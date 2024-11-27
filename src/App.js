@@ -4,7 +4,7 @@ import { Main } from "./pages/main/main";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
+      <Route path="/portfolio" element={<Main />} />
     </Routes>
   );
 }
