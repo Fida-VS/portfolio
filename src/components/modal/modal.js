@@ -4,6 +4,7 @@ import styles from "./modal.module.css";
 import { setIsOpenFalse } from "../../store/appSlice";
 
 export const Modal = () => {
+
   const isOpen = useSelector((state) => state.app.isOpen);
   const images = useSelector((state) => state.app.sliderImages);
 

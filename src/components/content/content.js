@@ -10,8 +10,12 @@ import styles from "./content.module.css";
 import { setSliderImages } from "../../store/appSlice";
 import { useDispatch } from "react-redux";
 import { Technologies } from "../technologies/technologies";
+import { ModalScale } from "../modal-125-scale/modal125";
 
 export const Content = () => {
+
+  const ratio = window.devicePixelRatio;
+
   const dispatch = useDispatch();
 
   const onClickSliderHandler = (array) => {
@@ -44,7 +48,7 @@ export const Content = () => {
               </InfiniteSlider>
             </div>
 
-            <Modal />
+            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
           <Technologies>
             <div className={styles.technology_box}>
@@ -101,7 +105,7 @@ export const Content = () => {
                 ))}
               </InfiniteSlider>
             </div>
-            <Modal />
+            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
           <Technologies>
             <div className={styles.technology_box}>
@@ -150,7 +154,7 @@ export const Content = () => {
                 ))}
               </InfiniteSlider>
             </div>
-            <Modal />
+            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
 
           <Technologies>
@@ -200,7 +204,7 @@ export const Content = () => {
                 ))}
               </InfiniteSlider>
             </div>
-            <Modal />
+            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
 
           <Technologies>

@@ -4,6 +4,7 @@ const initialState = {
   isOpen: false,
   technology: null,
   sliderImages: [],
+  sliderWidth: 560,
 };
 
 const appSlice = createSlice({
@@ -22,10 +23,13 @@ const appSlice = createSlice({
     setTechnology(state, action) {
       state.technology = action.payload;
     },
+    setSliderWidth(state, action) {
+      state.sliderWidth = action.payload;
+    }
   },
 });
 
-export const { setIsOpenTrue, setIsOpenFalse, setSliderImages, setTechnology } =
+export const { setIsOpenTrue, setIsOpenFalse, setSliderImages, setTechnology, setSliderWidth } =
   appSlice.actions;
 
 export default appSlice.reducer;

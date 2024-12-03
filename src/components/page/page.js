@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { SliderContext } from "../infiniteSlider/slider-context";
 import styles from "./page.module.css";
+import { useSelector } from "react-redux";
 
 export const Page = ({ children }) => {
-  const { width } = useContext(SliderContext);
+  
+  const width = useSelector((state) => state.app.sliderWidth);
 
   return (
     <div

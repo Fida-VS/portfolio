@@ -1,7 +1,7 @@
 
 import { Content } from "../../components/content/content";
 import { Sidebar } from "../../components/sidebar/sidebar";
-import { SidebarScale } from "../../components/sidebar125scale/sidebar125";
+import { SidebarScale } from "../../components/sidebar-125-scale/sidebar125";
 import styles from "./main.module.css";
 
 export const Main = () => {

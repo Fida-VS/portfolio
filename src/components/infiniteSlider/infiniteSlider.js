@@ -1,22 +1,22 @@
 import { Page } from "../page/page";
 import styles from "./infiniteSlider.module.css";
 import { Children, cloneElement, useEffect, useState } from "react";
-import { SliderContext } from "./slider-context";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsOpenTrue } from "../../store/appSlice";
 
-//const PAGE_WIDTH = 450;
+
 const TRANSITION_DURATION = 300;
 
 export const InfiniteSlider = ({ children, infinite }) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(560);
   const [clonesCount, setClonesCount] = useState({ head: 1, tail: 1 });
-  const [width, setWidth] = useState(560);
   const [transitionDuration, setTransitionDuration] =
     useState(TRANSITION_DURATION);
 
   const isOpen = useSelector((state) => state.app.isOpen);
+  const width = useSelector((state) => state.app.sliderWidth);
+ 
 
   const dispatch = useDispatch();
 
@@ -50,7 +50,7 @@ export const InfiniteSlider = ({ children, infinite }) => {
 
   useEffect(() => {
     setOffset(-(clonesCount.head * width));
-  }, [clonesCount, width]);
+  }, [clonesCount, width, dispatch]);
 
   useEffect(() => {
     if (infinite) {
@@ -95,7 +95,6 @@ export const InfiniteSlider = ({ children, infinite }) => {
   }, [infinite, offset, width, pages, clonesCount]);
 
   return (
-    <SliderContext.Provider value={{ width }}>
       <div className={styles.slider_box}>
         <div className={styles.arrow} onClick={handleArrowLeftClick}>
           ❮
@@ -122,7 +121,6 @@ export const InfiniteSlider = ({ children, infinite }) => {
           ❯
         </div>
       </div>
-    </SliderContext.Provider>
   );
 };
 
