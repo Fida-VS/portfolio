@@ -23,6 +23,7 @@ import todoInfo from "./../../img/todo/spisokdelinfo2.png";
 import reposInfo from "./../../img/search-repositories/repainfo2.png";
 
 export const SLIDER_PRIAN_IMAGES = [
+  
   [
     authorization,
     "authorization",
@@ -38,6 +39,7 @@ export const SLIDER_PRIAN_IMAGES = [
 ];
 
 export const SLIDER_REPOS_IMAGES = [
+ 
   [
     start,
     "start",
@@ -45,6 +47,7 @@ export const SLIDER_REPOS_IMAGES = [
     "Приложение для поиска репозиториев GitHub с помощью GitHub REST API. Результаты поиска представлены в виде таблицы со следующими столбцами: название, язык, число форков, число звёзд, дата обновления. По выбору строки должны отображаться детали: язык, число звёзд, описание, лицензия. Реализованы пагинация и сортировка с возможностью выбора направления по следующим столбцам: число звёзд, число форков, дата обновления.",
     "https://fida-vs.github.io/searchRepositories/",
     "https://github.com/Fida-VS/searchRepositories",
+    
   ],
   [main, "main"],
   [aside, "aside"],
@@ -52,6 +55,7 @@ export const SLIDER_REPOS_IMAGES = [
 ];
 
 export const SLIDER_MAZE_IMAGES = [
+  
   [
     entrance,
     "entrance",
@@ -59,6 +63,7 @@ export const SLIDER_MAZE_IMAGES = [
     "Full-stack приложение. Браузерная игра «Лабиринт». Реализованы страницы: регистрация, авторизация, описание игры, страница с игрой, страница с информацией, отзывы, приватная страница для администратора с таблицей пользователей. На главной странице можно проходить рандомно сгенерированные лабиринты. Для неавторизованных пользователей она недоступна. На странице с отзывами есть возможность оставить отзыв (если вы авторизованы). У администратора есть возможность удалить/отредактировать отзыв, а также удалить пользователя, или поменять его роль.",
     "http://45.8.97.126/",
     "https://github.com/Fida-VS/maze",
+    
   ],
   [maze, "maze"],
   [reviews, "reviews"],
@@ -70,6 +75,7 @@ export const SLIDER_MAZE_IMAGES = [
 ];
 
 export const SLIDER_TODO_IMAGES = [
+  
   [
     mainTodo,
     "main-todo",
@@ -77,6 +83,7 @@ export const SLIDER_TODO_IMAGES = [
     'Приложение "Список дел" - удобный инструмент для управления задачами. Можно создавать список дел, отмечать выполненные задачи и отслеживать прогресс выполнения. Основные функции: Добавление задач - вы можете добавить новую задачу в свой список дел всего за пару кликов.Удаление задач: Завершили дело? Просто удалите его из списка! Фильтрация задач: Приложение позволяет вам выбирать, какие задачи отображаются: только завершенные, незавершенные или все сразу. Для хранения данных используется JSONPlaceholder.',
     "https://fida-vs.github.io/minboxTodo/",
     "https://github.com/Fida-VS/minboxTodo",
+    
   ],
   [miniControlPanel, "mini_control-panel"],
   [controlPanel, "control-panel"],

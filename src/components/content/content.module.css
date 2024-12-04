@@ -107,3 +107,12 @@
 .docker {
   background-color: #2395ec;
 }
+
+
+@media screen
+and (max-width : 576px) 
+{
+  .content {
+    margin-left: 0;
+  }
+}

@@ -11,7 +11,7 @@
 
 .profile {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -112,3 +112,43 @@
     height: 100%;
 }
 
+@media screen
+and (max-width : 576px) 
+{
+    .sidebar {
+        position: static;
+        width: 100vw;
+    }
+
+    .profile {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatar {
+       margin-top: 10px;
+    }
+
+    .profile__skills__item {
+        width: 17%;
+        height: 17%;
+        margin: 4px;
+    }
+
+    .profile__skills__box {
+        padding: 10px;
+    }
+
+    .profile__skills {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
