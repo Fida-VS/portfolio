@@ -20,7 +20,7 @@ export const ContentMobile = () => {
     dispatch(setSliderImages(array));
   };
 
-  const SLIDER_WIDTH = 300;
+  const SLIDER_WIDTH = 250;
 
   return (
     <div className={styles.content}>

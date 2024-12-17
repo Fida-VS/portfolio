@@ -9,13 +9,13 @@ const TRANSITION_DURATION = 300;
 
 export const MobileSlider = ({ children, infinite }) => {
   const [pages, setPages] = useState([]);
-  const [offset, setOffset] = useState(300);
+  const [offset, setOffset] = useState(250);
   const [clonesCount, setClonesCount] = useState({ head: 1, tail: 1 });
   const [transitionDuration, setTransitionDuration] =
     useState(TRANSITION_DURATION);
 
   const isOpen = useSelector((state) => state.app.isOpen);
-  const width = 300;
+  const width = 250;
  
 
   const dispatch = useDispatch();
