@@ -88,6 +88,7 @@ export const ContentMobile = () => {
               <div className={styles.technology}>Docker</div>
             </div>
           </Technologies>
+          
         </div>
 
         {/* PRIAN PROJECT */}

@@ -163,7 +163,7 @@
     display: block;
     background-color: #fff;
     color: #000;
-    top: 20vh;
+    top: 17vh;
     left: 50vw;
     z-index: 2001;
   }
@@ -211,5 +211,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .avatar_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
   }
 }
