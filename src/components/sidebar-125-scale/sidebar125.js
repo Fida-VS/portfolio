@@ -1,21 +1,48 @@
 import { ICONS, ICONS_SOCIAL } from "../../constants";
 import avatar from "./../../img/avatar/avatar2.jpg";
+import { useState } from "react";
+import classNames from 'classnames/bind';
 import styles from "./sidebar125.module.css";
 
 export const SidebarScale = () => {
+
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+
+  const cx = classNames.bind(styles);
+
+  const sidebarClass = cx({
+		sidebar: true,
+		'opened': isProfileOpen,
+	});
+
+  const profileClass = cx({
+		profile: true,
+		'opened': isProfileOpen,
+	});
+
+
   return (
-    <div className={styles.sidebar}>
-      <div className={styles.profile}>
+    <div className={sidebarClass}>
+
+<div className={styles.button_only_mobile} onClick={() => setIsProfileOpen(!isProfileOpen)}>&#9660;</div>
+
+      <div className={profileClass}>
+
+        <div className={styles.avatar_box}>
         <div className={styles.avatar}>
           <img src={avatar} alt="avatar" />
         </div>
 
         <div className={styles.profile__header}>
-          <h3>Судницына Вера</h3>
-          <h4>Front-end разработчик</h4>
+          <div>Судницына Вера</div>
+          <div>Front-end разработчик</div>
+        </div>
         </div>
 
-        <div className={styles.social}>
+        
+     <div className={`disappearing_box ${isProfileOpen ? '' : 'hidden'}`}>
+
+       <div className={styles.social}>
           <div className={styles.social_links}>
             <div className={styles.social__item}>
               <a href="https://balashiha.hh.ru/resume/23509aa3ff081fe8d60039ed1f4b4a71565048">
@@ -88,6 +115,7 @@ export const SidebarScale = () => {
               <img src={ICONS.MUI} alt="mui" />
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

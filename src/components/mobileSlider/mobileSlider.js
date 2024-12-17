@@ -1,5 +1,5 @@
 import { Page } from "../page/page";
-import styles from "./infiniteSlider.module.css";
+import styles from "./mobileSlider.module.css";
 import { Children, cloneElement, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsOpenTrue } from "../../store/appSlice";
@@ -7,15 +7,15 @@ import { setIsOpenTrue } from "../../store/appSlice";
 
 const TRANSITION_DURATION = 300;
 
-export const InfiniteSlider = ({ children, infinite }) => {
+export const MobileSlider = ({ children, infinite }) => {
   const [pages, setPages] = useState([]);
-  const [offset, setOffset] = useState(560);
+  const [offset, setOffset] = useState(300);
   const [clonesCount, setClonesCount] = useState({ head: 1, tail: 1 });
   const [transitionDuration, setTransitionDuration] =
     useState(TRANSITION_DURATION);
 
   const isOpen = useSelector((state) => state.app.isOpen);
-  const width = useSelector((state) => state.app.sliderWidth);
+  const width = 300;
  
 
   const dispatch = useDispatch();
@@ -113,7 +113,7 @@ export const InfiniteSlider = ({ children, infinite }) => {
                 transform: `translateX(${offset}px)`,
               }}
             >
-               {pages.map((page, index) => (
+              {pages.map((page, index) => (
     cloneElement(page, { key: `page-${index}` })
   ))}
             </div>
@@ -126,4 +126,4 @@ export const InfiniteSlider = ({ children, infinite }) => {
   );
 };
 
-InfiniteSlider.Page = Page;
+MobileSlider.Page = Page;

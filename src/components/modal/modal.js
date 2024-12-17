@@ -21,8 +21,8 @@ export const Modal = () => {
       <div className={styles.box}>
         <div className={styles.title}>{images[0][2]}</div>
         <InfiniteSlider infinite>
-          {sortedImages.map((img) => (
-            <InfiniteSlider.Page>
+          {sortedImages.map((img, index) => (
+            <InfiniteSlider.Page key={`modal-slider-page-${index}`}>
               <div className={styles.item}>
                 <img src={img[0]} alt={`${img[1]}-screen`} />
               </div>

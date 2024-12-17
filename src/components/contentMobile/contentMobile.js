@@ -1,27 +1,26 @@
-import { InfiniteSlider } from "../infiniteSlider/infiniteSlider";
-import { Modal } from "../modal/modal";
+
 import {
   SLIDER_MAZE_IMAGES,
   SLIDER_PRIAN_IMAGES,
   SLIDER_REPOS_IMAGES,
   SLIDER_TODO_IMAGES,
 } from "../../constants";
-import styles from "./content.module.css";
+import styles from "./contentMobile.module.css";
 import { setSliderImages } from "../../store/appSlice";
 import { useDispatch } from "react-redux";
 import { Technologies } from "../technologies/technologies";
-import { ModalScale } from "../modal-125-scale/modal125";
+import { MobileSlider } from "../mobileSlider/mobileSlider";
 
 
-export const Content = () => {
-
-  const ratio = window.devicePixelRatio;
+export const ContentMobile = () => {
 
   const dispatch = useDispatch();
 
   const onClickSliderHandler = (array) => {
     dispatch(setSliderImages(array));
   };
+
+  const SLIDER_WIDTH = 300;
 
   return (
     <div className={styles.content}>
@@ -38,18 +37,22 @@ export const Content = () => {
               className={styles.slider_box}
               onClick={() => onClickSliderHandler(SLIDER_MAZE_IMAGES)}
             >
-              <InfiniteSlider infinite>
+              <MobileSlider infinite>
                 {SLIDER_MAZE_IMAGES.map((img, index) => (
-                  <InfiniteSlider.Page key={`slider-page-${index}`}>
+                  <div
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
-                  </InfiniteSlider.Page>
+                  </div>
                 ))}
-              </InfiniteSlider>
+              </MobileSlider>
             </div>
 
-            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
           <Technologies>
             <div className={styles.technology_box}>
@@ -96,17 +99,21 @@ export const Content = () => {
               className={styles.slider_box}
               onClick={() => onClickSliderHandler(SLIDER_PRIAN_IMAGES)}
             >
-              <InfiniteSlider infinite>
+              <MobileSlider infinite>
                 {SLIDER_PRIAN_IMAGES.map((img, index) => (
-                  <InfiniteSlider.Page key={`slider-page-${index}`}>
+                  <div
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
-                  </InfiniteSlider.Page>
+                  </div>
                 ))}
-              </InfiniteSlider>
+              </MobileSlider>
             </div>
-            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
           <Technologies>
             <div className={styles.technology_box}>
@@ -145,17 +152,21 @@ export const Content = () => {
               className={styles.slider_box}
               onClick={() => onClickSliderHandler(SLIDER_REPOS_IMAGES)}
             >
-              <InfiniteSlider infinite>
+              <MobileSlider infinite>
                 {SLIDER_REPOS_IMAGES.map((img, index) => (
-                  <InfiniteSlider.Page key={`slider-page-${index}`}>
+                  <div
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
-                  </InfiniteSlider.Page>
+                  </div>
                 ))}
-              </InfiniteSlider>
+              </MobileSlider>
             </div>
-            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
 
           <Technologies>
@@ -195,17 +206,21 @@ export const Content = () => {
               className={styles.slider_box}
               onClick={() => onClickSliderHandler(SLIDER_TODO_IMAGES)}
             >
-              <InfiniteSlider infinite>
+              <MobileSlider infinite>
                 {SLIDER_TODO_IMAGES.map((img, index) => (
-                  <InfiniteSlider.Page key={`slider-page-${index}`}>
+                  <div
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
-                  </InfiniteSlider.Page>
+                  </div>
                 ))}
-              </InfiniteSlider>
+              </MobileSlider>
             </div>
-            { ratio > 1 ? <ModalScale /> : <Modal /> }
           </div>
 
           <Technologies>
