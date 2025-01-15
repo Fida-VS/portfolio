@@ -25,13 +25,19 @@ export const SidebarScale = () => {
     avatar_box_mobile: isMobile,
   });
 
+  const profileButtonClass = cx({
+    button_only_mobile: true,
+    button_up: isProfileOpen,
+  });
+
+  
   return (
     <div className={sidebarClass}>
       <div
-        className={styles.button_only_mobile}
+        className={profileButtonClass}
         onClick={() => setIsProfileOpen(!isProfileOpen)}
       >
-        &#9660;
+        ❯
       </div>
 
       <div className={profileClass}>

@@ -1,0 +1,42 @@
+
+.projectInfo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.projectInfo button {
+  width: 50px;
+  height: 30px;
+  color: #000;
+  background-color: #fff;
+}
+
+
+.projectInfo__text {
+    width: 75%;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-indent: 1.5%;
+    text-align: justify;
+    transition: opacity 0.3s ease-in-out,
+                 max-height 0.3s ease-in-out 0.15s; /* Задержка 150 мс */
+     will-change: opacity, max-height;
+     overflow: hidden; 
+    
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+  /* transform: translateY(-20px);  */
+}
+
+.visible {
+    opacity: 1;
+    height: auto;
+    /* transform: translateY(0); */
+  }

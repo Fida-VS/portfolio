@@ -47,6 +47,21 @@
   margin: 2px;
 }
 
+.projectText__buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -3vh;
+  padding-bottom: 2vh;
+}
+
+.projectText__button {
+  color: #e2c08d;
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+}
+
 .slider_box {
   cursor: pointer;
 }
@@ -55,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 7px 10px;
+  margin: 7px 10px 30px;
 }
 
 .technology {

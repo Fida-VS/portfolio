@@ -165,14 +165,19 @@
 
   .button_only_mobile {
     position: absolute;
-    width: 30px;
-    height: 30px;
     display: block;
-    background-color: #fff;
-    color: #000;
+    color: #e2c08d;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
     top: 17vh;
     left: 50vw;
     z-index: 2001;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .button_up {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease-in-out; 
   }
 
   .disappearing_box {
