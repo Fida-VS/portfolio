@@ -23,7 +23,7 @@
     text-indent: 1.5%;
     text-align: justify;
     transition: opacity 0.3s ease-in-out,
-                 max-height 0.3s ease-in-out 0.15s; /* Задержка 150 мс */
+    max-height 0.3s ease-in-out 0.15s; 
      will-change: opacity, max-height;
      overflow: hidden; 
     

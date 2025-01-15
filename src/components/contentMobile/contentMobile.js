@@ -1,3 +1,4 @@
+
 import {
   SLIDER_MAZE_IMAGES,
   SLIDER_PRIAN_IMAGES,
@@ -11,11 +12,13 @@ import { Technologies } from "../technologies/technologies";
 import { MobileSlider } from "../mobileSlider/mobileSlider";
 import { MobileProjectInfo } from "../mobileProjectInfo/mobileProjectInfo";
 
+
 export const ContentMobile = () => {
+
   const dispatch = useDispatch();
 
   const onToggleClick = (id, array) => {
-    dispatch(setSliderImages(array));
+    dispatch(setSliderImages(array))
     dispatch(toggleMobileProjectInfo(id));
   };
 
@@ -32,17 +35,17 @@ export const ContentMobile = () => {
         <div className={styles.project}>
           <div className={styles.title}>Лабиринт</div>
           <div>
-            <div className={styles.slider_box}>
+            <div
+              className={styles.slider_box}
+            >
               <MobileSlider infinite>
                 {SLIDER_MAZE_IMAGES.map((img, index) => (
                   <div
-                    className={styles.page__mainContainer}
-                    style={{
-                      minWidth: `${SLIDER_WIDTH}px`,
-                      maxWidth: `${SLIDER_WIDTH}px`,
-                    }}
-                    key={`mobile-slider-page-${index}`}
-                  >
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
@@ -50,6 +53,7 @@ export const ContentMobile = () => {
                 ))}
               </MobileSlider>
             </div>
+
           </div>
           <Technologies>
             <div className={styles.technology_box}>
@@ -86,16 +90,10 @@ export const ContentMobile = () => {
             </div>
           </Technologies>
 
-          <div className={styles.projectText__buttonBox}>
-            <div
-              className={styles.projectText__button}
-              onClick={() => onToggleClick("mazeInfo", SLIDER_MAZE_IMAGES)}
-            >
-              ❯
-            </div>
-          </div>
+                <div className={styles.projectText__buttonBox}><div className={styles.projectText__button} onClick={() => onToggleClick('mazeInfo', SLIDER_MAZE_IMAGES)} >❯</div></div>
 
           <MobileProjectInfo id="mazeInfo" />
+          
         </div>
 
         {/* PRIAN PROJECT */}
@@ -103,17 +101,17 @@ export const ContentMobile = () => {
         <div className={styles.project}>
           <div className={styles.title}>Таблица</div>
           <div>
-            <div className={styles.slider_box}>
+            <div
+              className={styles.slider_box}
+            >
               <MobileSlider infinite>
                 {SLIDER_PRIAN_IMAGES.map((img, index) => (
                   <div
-                    className={styles.page__mainContainer}
-                    style={{
-                      minWidth: `${SLIDER_WIDTH}px`,
-                      maxWidth: `${SLIDER_WIDTH}px`,
-                    }}
-                    key={`mobile-slider-page-${index}`}
-                  >
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
@@ -149,14 +147,7 @@ export const ContentMobile = () => {
             </div>
           </Technologies>
 
-          <div className={styles.projectText__buttonBox}>
-            <div
-              className={styles.projectText__button}
-              onClick={() => onToggleClick("tableInfo", SLIDER_PRIAN_IMAGES)}
-            >
-              ❯
-            </div>
-          </div>
+          <div className={styles.projectText__buttonBox}><div className={styles.projectText__button} onClick={() => onToggleClick('tableInfo', SLIDER_PRIAN_IMAGES)} >❯</div></div>
 
           <MobileProjectInfo id="tableInfo" />
         </div>
@@ -166,17 +157,17 @@ export const ContentMobile = () => {
         <div className={styles.project}>
           <div className={styles.title}>Поиск репозиториев</div>
           <div>
-            <div className={styles.slider_box}>
+            <div
+              className={styles.slider_box}
+            >
               <MobileSlider infinite>
                 {SLIDER_REPOS_IMAGES.map((img, index) => (
                   <div
-                    className={styles.page__mainContainer}
-                    style={{
-                      minWidth: `${SLIDER_WIDTH}px`,
-                      maxWidth: `${SLIDER_WIDTH}px`,
-                    }}
-                    key={`mobile-slider-page-${index}`}
-                  >
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
@@ -213,14 +204,7 @@ export const ContentMobile = () => {
             </div>
           </Technologies>
 
-          <div className={styles.projectText__buttonBox}>
-            <div
-              className={styles.projectText__button}
-              onClick={() => onToggleClick("reposInfo", SLIDER_REPOS_IMAGES)}
-            >
-              ❯
-            </div>
-          </div>
+          <div className={styles.projectText__buttonBox}><div className={styles.projectText__button} onClick={() => onToggleClick('reposInfo', SLIDER_REPOS_IMAGES)} >❯</div></div>
 
           <MobileProjectInfo id="reposInfo" />
         </div>
@@ -230,17 +214,17 @@ export const ContentMobile = () => {
         <div className={styles.project}>
           <div className={styles.title}>Список дел</div>
           <div>
-            <div className={styles.slider_box}>
+            <div
+              className={styles.slider_box}
+            >
               <MobileSlider infinite>
                 {SLIDER_TODO_IMAGES.map((img, index) => (
                   <div
-                    className={styles.page__mainContainer}
-                    style={{
-                      minWidth: `${SLIDER_WIDTH}px`,
-                      maxWidth: `${SLIDER_WIDTH}px`,
-                    }}
-                    key={`mobile-slider-page-${index}`}
-                  >
+                        className={styles.page__mainContainer}
+                        style={{
+                          minWidth: `${SLIDER_WIDTH}px`,
+                          maxWidth: `${SLIDER_WIDTH}px`,
+                        }} key={`mobile-slider-page-${index}`}>
                     <div className={styles.item}>
                       <img src={img[0]} alt={`${img[1]}-screen`} />
                     </div>
@@ -277,14 +261,7 @@ export const ContentMobile = () => {
             </div>
           </Technologies>
 
-          <div className={styles.projectText__buttonBox}>
-            <div
-              className={styles.projectText__button}
-              onClick={() => onToggleClick("todoInfo", SLIDER_TODO_IMAGES)}
-            >
-              ❯
-            </div>
-          </div>
+          <div className={styles.projectText__buttonBox}><div className={styles.projectText__button} onClick={() => onToggleClick('todoInfo', SLIDER_TODO_IMAGES)} >❯</div></div>
 
           <MobileProjectInfo id="todoInfo" />
         </div>
